@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "mountain.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "width" : 0.063577999999999996
+  }
+}

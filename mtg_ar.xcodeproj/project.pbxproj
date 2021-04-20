@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		239703FB262E88090014B0D8 /* LandCardClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */; };
 		23C3A759262E30870032FB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A758262E30870032FB52 /* AppDelegate.swift */; };
 		23C3A75B262E30870032FB52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A75A262E30870032FB52 /* ContentView.swift */; };
 		23C3A75D262E30870032FB52 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A75C262E30870032FB52 /* Experience.rcproject */; };
 		23C3A75F262E30890032FB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C3A75E262E30890032FB52 /* Assets.xcassets */; };
 		23C3A762262E30890032FB52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C3A761262E30890032FB52 /* Preview Assets.xcassets */; };
+		23C3A76C262E36EA0032FB52 /* MLRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A76B262E36EA0032FB52 /* MLRecognizer.swift */; };
+		23C3A76F262E3F470032FB52 /* ARKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A76E262E3F470032FB52 /* ARKit+Utilities.swift */; };
+		23C3A772262E3F730032FB52 /* CoreImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A771262E3F730032FB52 /* CoreImage+Utility.swift */; };
+		23C3A775262E3F960032FB52 /* UIImage+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A774262E3F960032FB52 /* UIImage+Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = LandCardClassifier.mlmodel; path = ../../LandCardClassifier.mlmodel; sourceTree = "<group>"; };
 		23C3A755262E30870032FB52 /* mtg_ar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtg_ar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C3A758262E30870032FB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C3A75A262E30870032FB52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		23C3A75E262E30890032FB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C3A761262E30890032FB52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23C3A763262E30890032FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C3A76B262E36EA0032FB52 /* MLRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLRecognizer.swift; sourceTree = "<group>"; };
+		23C3A76E262E3F470032FB52 /* ARKit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARKit+Utilities.swift"; sourceTree = "<group>"; };
+		23C3A771262E3F730032FB52 /* CoreImage+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreImage+Utility.swift"; sourceTree = "<group>"; };
+		23C3A774262E3F960032FB52 /* UIImage+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utilities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				23C3A758262E30870032FB52 /* AppDelegate.swift */,
 				23C3A75A262E30870032FB52 /* ContentView.swift */,
+				239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */,
 				23C3A75C262E30870032FB52 /* Experience.rcproject */,
 				23C3A75E262E30890032FB52 /* Assets.xcassets */,
 				23C3A763262E30890032FB52 /* Info.plist */,
 				23C3A760262E30890032FB52 /* Preview Content */,
+				23C3A76B262E36EA0032FB52 /* MLRecognizer.swift */,
+				23C3A76E262E3F470032FB52 /* ARKit+Utilities.swift */,
+				23C3A771262E3F730032FB52 /* CoreImage+Utility.swift */,
+				23C3A774262E3F960032FB52 /* UIImage+Utilities.swift */,
 			);
 			path = mtg_ar;
 			sourceTree = "<group>";
@@ -141,8 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239703FB262E88090014B0D8 /* LandCardClassifier.mlmodel in Sources */,
 				23C3A75B262E30870032FB52 /* ContentView.swift in Sources */,
+				23C3A76F262E3F470032FB52 /* ARKit+Utilities.swift in Sources */,
 				23C3A759262E30870032FB52 /* AppDelegate.swift in Sources */,
+				23C3A772262E3F730032FB52 /* CoreImage+Utility.swift in Sources */,
+				23C3A76C262E36EA0032FB52 /* MLRecognizer.swift in Sources */,
+				23C3A775262E3F960032FB52 /* UIImage+Utilities.swift in Sources */,
 				23C3A75D262E30870032FB52 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"mtg_ar/Preview Content\"";
+				DEVELOPMENT_TEAM = F3M935826C;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = mtg_ar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +314,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"mtg_ar/Preview Content\"";
+				DEVELOPMENT_TEAM = F3M935826C;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = mtg_ar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
