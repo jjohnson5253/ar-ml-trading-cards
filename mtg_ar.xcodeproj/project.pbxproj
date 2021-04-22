@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		239703FB262E88090014B0D8 /* LandCardClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */; };
+		23BB9B2B2630FD9300897587 /* diamond.scn in Resources */ = {isa = PBXBuildFile; fileRef = 23BB9B2A2630FD9300897587 /* diamond.scn */; };
 		23C3A759262E30870032FB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A758262E30870032FB52 /* AppDelegate.swift */; };
 		23C3A75B262E30870032FB52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A75A262E30870032FB52 /* ContentView.swift */; };
 		23C3A75D262E30870032FB52 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 23C3A75C262E30870032FB52 /* Experience.rcproject */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = LandCardClassifier.mlmodel; path = ../../LandCardClassifier.mlmodel; sourceTree = "<group>"; };
+		23BB9B2A2630FD9300897587 /* diamond.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = diamond.scn; path = ../../../Downloads/diamond.scn; sourceTree = "<group>"; };
 		23C3A755262E30870032FB52 /* mtg_ar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtg_ar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C3A758262E30870032FB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C3A75A262E30870032FB52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		23C3A757262E30870032FB52 /* mtg_ar */ = {
 			isa = PBXGroup;
 			children = (
+				23BB9B2A2630FD9300897587 /* diamond.scn */,
 				23C3A758262E30870032FB52 /* AppDelegate.swift */,
 				23C3A75A262E30870032FB52 /* ContentView.swift */,
 				239703FA262E88090014B0D8 /* LandCardClassifier.mlmodel */,
@@ -144,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BB9B2B2630FD9300897587 /* diamond.scn in Resources */,
 				23C3A762262E30890032FB52 /* Preview Assets.xcassets in Resources */,
 				23C3A75F262E30890032FB52 /* Assets.xcassets in Resources */,
 			);

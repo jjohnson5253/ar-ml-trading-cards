@@ -11,6 +11,9 @@ import UIKit
 
 final class ARSceneViewController: UIViewController {
 
+    var diamondNode:SCNNode?
+    let diamondScene = SCNScene(named: "diamond.scn")
+    
     lazy var recognizer = MLRecognizer(
         model: LandCardClassifier().model,
         sceneView: sceneView
@@ -38,6 +41,8 @@ extension ARSceneViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        diamondNode = diamondScene?.rootNode
 
         title = "ARKit + CoreML"
         navigationItem.rightBarButtonItem = refreshButton
@@ -81,6 +86,30 @@ extension ARSceneViewController: ARSCNViewDelegate {
                 self?.attachLabel(classification, to: node)
             }
         }
+        
+        if let imageAnchor = anchor as? ARImageAnchor {
+            let size = imageAnchor.referenceImage.physicalSize
+            let plane = SCNPlane(width: size.width, height: size.height)
+            plane.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
+            plane.cornerRadius = 0.005
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.eulerAngles.x = -.pi/2
+            node.addChildNode(planeNode)
+            
+            
+            var shapeNode:SCNNode?
+            
+            shapeNode = diamondNode
+            
+            guard let shape = shapeNode else {return}
+            
+            
+            let shapeSpin = SCNAction.rotateBy(x: 0, y: 2 * .pi, z: 0, duration: 10)
+            let reapeatSpin = SCNAction.repeatForever(shapeSpin)
+            shapeNode?.runAction(reapeatSpin)
+            
+            node.addChildNode(shape)
+        }
     }
 
 }
@@ -96,7 +125,13 @@ extension ARSceneViewController {
         plane.geometry?.firstMaterial?.diffuse.contents = UIColor.darkGray
         plane.geometry?.firstMaterial?.fillMode = .lines
         plane.eulerAngles.x = -.pi / 2
+        
+        /*var shapeNode:SCNNode?
+        shapeNode = diamondNode
+        guard let shape = shapeNode else {return}*/
+        
         node?.addChildNode(plane)
+        //node?.addChildNode(shape)
     }
 
     // Adds a label below `node`
