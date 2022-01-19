@@ -1,4 +1,4 @@
-# AR Trading Card 💳
+# AR ML Trading Card 💳
 iOS app demonstrating Apple's 🍎 ML Core and ARkit 💻. It uses ML Core's image classifier 🔍 neural network to distinguish between different types of Magic the Gathering cards 🧙‍♂️ and displays their name underneath the card in AR 👀.
 
 <div align="center">
